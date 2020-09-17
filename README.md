@@ -212,3 +212,28 @@ syntax.
     midi_all(callback = handle)
 
 -   `{beepr}`
+
+<!-- -->
+
+    library(beepr)
+    handle <- function(x){
+      x <- jsonlite::fromJSON(x)
+      cli::cat_rule(x$msg$note)
+      note <- switch(
+        as.character(x$msg$note), 
+        "60" = 1,
+        "61" = 2,
+        "62" = 3,
+        "63" = 4,
+        "64" = 5,
+        "65" = 6,
+        "66" = 7,
+        "67" = 8,
+        "68" = 9,
+        "69" = 10,
+        "70" = 11
+      )
+      beep(note)
+      
+    }
+    midi_one_event(event = "noteon", callback = handle,  n = 0)
