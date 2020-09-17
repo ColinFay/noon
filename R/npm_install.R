@@ -17,6 +17,6 @@ noon_npm_install <- function(
   run(
     command = "npm",
     args = c("install"),
-    wd = system.file("cordes", package = package)
+    wd = system.file("cordes", package = "noon")
   )
 }
