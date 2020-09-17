@@ -71,7 +71,7 @@ inputs anymore.
 
 This function will listen to one event type only (all interfaces)
 
-    midi_one_event(event = "cc", fun = handle)
+    midi_one_event(event = "cc")
 
 This function takes the following arguments:
 
