@@ -21,7 +21,8 @@ Then, the package can be installed with:
     remotes::install_github("ColinFay/noon")
 
 After install, you’ll need to run **one time** `noon_npm_install()` to
-set up all the Node dependencies.
+set up all the Node dependencies. This will ask you if you’re OK with
+doing that installation.
 
     library(noon)
     noon_npm_install()

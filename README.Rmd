@@ -33,6 +33,7 @@ remotes::install_github("ColinFay/noon")
 ```
 
 After install, you'll need to run __one time__ `noon_npm_install()` to set up all the Node dependencies.
+This will ask you if you're OK with doing that installation.
 
 ```{r}
 library(noon)
