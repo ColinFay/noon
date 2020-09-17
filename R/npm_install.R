@@ -14,5 +14,10 @@ noon_npm_install <- function(
   package = "noon",
   force = FALSE
 ){
-  cordes_npm_install(package = package, force = force)
+  res <- cordes_npm_install(package = package, force = force)
+  if (res$status == 0){
+    message("npm installation finished")
+  } else {
+    stop("npm installation finished")
+  }
 }
