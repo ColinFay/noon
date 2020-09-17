@@ -201,7 +201,7 @@ syntax.
         devtools::check()
       }
       if (x$msg$controller == 15 && x$msg$value == 127){
-        cli::cat_line("Testing")
+        cli::cat_line("Document")
         devtools::document()
       }
       if (x$msg$controller == 16 && x$msg$value == 127){

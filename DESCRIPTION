@@ -22,3 +22,5 @@ Imports:
     digest
 Remotes: 
     colinfay/cordes
+Suggests: 
+    testthat
