@@ -1,0 +1,4 @@
+.Rproj.user
+inst/cordes/package-lock.json
+inst/cordes/node_modules/*
+inst/samples/
